@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Always on Top 🔝</title>
+  </head>
+  <body>
+    <div id="browser-tools" style="display: flex; width: 100vw">
+      <div id="button-container">
+        <button id="back-button">&larr;</button>
+        <button id="forward-button">&rarr;</button>
+        <button id="reload-button">&#x21bb;</button>
+        <button id="search-button">&#128270;</button>
+        <button id="new-window-button">🪟</button>
+      </div>
+      <form>
+        <input type="text" id="url-input" required />
+        <button type="submit" id="go">Go</button>
+      </form>
+    </div>
+    <webview id="webview"></webview>
+    <script type="module" src="/src/renderer.js"></script>
+  </body>
+</html>
